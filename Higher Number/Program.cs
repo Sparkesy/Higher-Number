@@ -11,6 +11,8 @@ namespace Higher_Number
 
         static void DrawWelcome()
         {
+            Console.WindowHeight = 7;
+            Console.WindowWidth = 27;
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine(String.Format("{0," + Console.WindowWidth / 2 + "}", "===== Higher Number ====="));
             Console.WriteLine();
@@ -20,6 +22,8 @@ namespace Higher_Number
         }
         static void RunTest()
         {
+            Console.WindowHeight = 15;
+            Console.WindowWidth = 35;
             Console.Clear();
             // catch errors
             try
@@ -69,7 +73,10 @@ namespace Higher_Number
         }
         private static void again()
         {
+            Console.WindowHeight = 5;
+            Console.WindowWidth = 80;
             Console.Clear();
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("if you wish to rerun the program press 'y' otherwise press 'n' to exit.");
             string usercommand = Console.ReadLine().ToLower();
             if (usercommand == "y")
@@ -85,7 +92,10 @@ namespace Higher_Number
         }
         private static void exit()
         {
+            Console.WindowHeight = 10;
+            Console.WindowWidth = 72;
             Console.Clear();
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("Thank you for using my program");
             Console.WriteLine("Find more interesting projects at my GitHub Repository: bit.ly/2YDCMYQ ");
             Console.WriteLine();
@@ -93,6 +103,7 @@ namespace Higher_Number
             Console.WriteLine("Program Developed using Visual Studio 2019 Community Edition");
             Console.WriteLine();
             Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.DarkGreen;
             Console.WriteLine("Press any key to exit");
             Console.ReadKey();
             Environment.Exit(0);
