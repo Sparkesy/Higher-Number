@@ -8,19 +8,13 @@ namespace Higher_Number
         {
             DrawWelcome();
         }
-        // draw boilerplate
+
         static void DrawWelcome()
         {
             Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine("========================");
-            Console.Write("====");
-            Console.ForegroundColor = ConsoleColor.White;
-            Console.Write("Higher Number");
-            Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine("====");
-            Console.WriteLine("========================");
+            Console.WriteLine(String.Format("{0," + Console.WindowWidth / 2 + "}", "===== Higher Number ====="));
             Console.WriteLine();
-            Console.WriteLine("Press any key to continue");
+            Console.WriteLine(String.Format("{0," + Console.WindowWidth / 2 + "}", "Press any key to continue"));
             Console.ReadKey();
             RunTest();
         }
@@ -108,4 +102,3 @@ namespace Higher_Number
 
 
 
-   
